@@ -8,15 +8,26 @@
 <body>
     <script>
 //задание №1 Модификация функции с циклом:
-    const printNumbers = (lastNumber) => {
-        let i = lastNumber;
-        while (i >= 1) {
-        console.log(i);
-        i = i - 1;
-        }
-        console.log('finished')
-}
-printNumbers(4);
+// const printNumbers = (lastNumber) => {
+//   let i = lastNumber;
+//   while (i >= 1) {
+//     console.log(i);
+//   i = i - 1;
+//   }
+//   console.log('finished');
+// }
+// printNumbers(4);
+//Задание #2 Агрегация данных
+const multilpyNumberFromRange = (a,b) => {
+  let i = a + 1;
+  let mul = a;
+  while (i <= b) {
+    mul = mul * i;
+    i = i + 1;
+  } ;
+  return mul;
+};
+console.log(multilpyNumberFromRange(1,5));
     </script>
 </body>
 </html>
