@@ -48,21 +48,35 @@
 //   };
 // printReversedNameBySymbol ('ebados');
 //Задание №5
-const countChars = (str, char) => {
-  let i = 0;
-  let count = 0;
-  str = str.toUpperCase();
-  char = char.toUpperCase();
-  while (i < str.length) {
-    if (str[i] === char) {
-      count = count + 1;
-    };
-    i = i +1;
+// const countChars = (str, char) => {
+//   let i = 0;
+//   let count = 0;
+//   str = str.toUpperCase();
+//   char = char.toUpperCase();
+//   while (i < str.length) {
+//     if (str[i] === char) {
+//       count = count + 1;
+//     };
+//     i = i +1;
+//   };
+
+//   return count;
+// };
+//console.log(countChars('unIversity', 'i'));
+
+//Задание №6
+const reverse = (str) => {
+  let i = str.length - 1;
+  let result = '';
+  while (i >= 0){
+    result = `${result}${str[i]}`;
+    i = i - 1;
   };
 
-  return count;
+  return result;
 };
-console.log(countChars('unIversity', 'i'));
-    </script>
+const name = 'Bran';
+console.log(reverse(name));
+  </script>
 </body>
 </html>
