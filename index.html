@@ -28,16 +28,25 @@
 // };
 //console.log(multilpyNumberFromRange(1,5));
 //Задание №3
-const joinNumbersFromRange = (start, end) => {
-    let join = '';
-    while (start <= end ) {
-      join = `${join}${start}`;
-      //join += `${start}`;
-      start = start + 1;
+// const joinNumbersFromRange = (start, end) => {
+//     let join = '';
+//     while (start <= end ) {
+//       join = `${join}${start}`;
+//       //join += `${start}`;
+//       start = start + 1;
+//     };
+//     return join;
+//   };
+//   console.log(joinNumbersFromRange(1,8))
+//Задание №4
+const printReversedNameBySymbol = (name) => {
+  let i = name.length;
+   while (i > 0) {
+    console.log(name[i-1]);
+    i--;
     };
-    return join;
   };
-  console.log(joinNumbersFromRange(1,8))
+printReversedNameBySymbol ('ebados');
     </script>
 </body>
 </html>
