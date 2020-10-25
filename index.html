@@ -39,14 +39,30 @@
 //   };
 //   console.log(joinNumbersFromRange(1,8))
 //Задание №4
-const printReversedNameBySymbol = (name) => {
-  let i = name.length;
-   while (i > 0) {
-    console.log(name[i-1]);
-    i--;
+// const printReversedNameBySymbol = (name) => {
+//   let i = name.length;
+//    while (i > 0) {
+//     console.log(name[i-1]);
+//     i--;
+//     };
+//   };
+// printReversedNameBySymbol ('ebados');
+//Задание №5
+const countChars = (str, char) => {
+  let i = 0;
+  let count = 0;
+  str = str.toUpperCase();
+  char = char.toUpperCase();
+  while (i < str.length) {
+    if (str[i] === char) {
+      count = count + 1;
     };
+    i = i +1;
   };
-printReversedNameBySymbol ('ebados');
+
+  return count;
+};
+console.log(countChars('unIversity', 'i'));
     </script>
 </body>
 </html>
