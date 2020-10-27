@@ -65,18 +65,44 @@
 //console.log(countChars('unIversity', 'i'));
 
 //Задание №6
-const reverse = (str) => {
-  let i = str.length - 1;
-  let result = '';
-  while (i >= 0){
-    result = `${result}${str[i]}`;
-    i = i - 1;
-  };
+// const reverse = (str) => {
+//   let i = str.length - 1;
+//   let result = '';
+//   while (i >= 0){
+//     result = `${result}${str[i]}`;
+//     i = i - 1;
+//   };
 
-  return result;
+//   return result;
+// };
+// const name = 'Bran';
+// console.log(reverse(name));
+//Задание №7
+const makeItFunny = (str, number) => {
+  let i = 0;
+  let c = '';
+  while (i < str.length) {
+    if ((i+1) % number == 0) {
+    c = c + str[i].toUpperCase();
+    } else {
+      c = c + str[i];
+    }
+    i++;
+  };
+  return c;
 };
-const name = 'Bran';
-console.log(reverse(name));
+console.log(makeItFunny('kokoko',2));
+
+//Задание #8 Возврат из циклов
+// const hasChar= (str, char) =>{
+//   let i = 0;
+//   while (i < str.length) {
+//     if (str[i] === char) {
+//     return true}
+//     else return false
+//   };
+// };
+// console.log(hasChar('Keekoz','z'));
   </script>
 </body>
 </html>
